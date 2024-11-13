@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cssform.css" rel="stylesheet" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <section>
+      <div class="titulo-container">
+        <h1>Cadastro de Usuário</h1>
+      </div>
+      <form action="#" method="post">
+        <div class="formulario1">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="formulario1">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          <div id="emailHelp" class="form-text">Seu e-mail está seguro conosco.</div>
+        </div>
+
+        <div class="formulario1">
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="formulario1">
+          <label for="confirmar-senha">Confirmar Senha:</label>
+          <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+        </div>
+
+        <div class="formulario1">
+          <label>Gênero:</label>
+          <label class="radio-container">
+              Masculino
+              <input type="radio" id="genero-masculino" name="genero" value="Masculino">
+              <span class="checkmark"></span>
+          </label>
+          <label class="radio-container">
+              Feminino
+              <input type="radio" id="genero-feminino" name="genero" value="Feminino">
+              <span class="checkmark"></span>
+          </label>
+          <label class="radio-container">
+              Outro
+              <input type="radio" id="genero-outro" name="genero" value="Outro">
+              <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div class="formulario1">
+          <label for="data-nascimento">Data de Nascimento:</label>
+          <input type="date" id="data-nascimento" name="data-nascimento" required>
+        </div>
+
+        <div class="formulario1">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Sua cidade">
+        </div>
+
+        <div class="formulario1">
+          <label for="pais">País:</label>
+          <input type="text" id="pais" name="pais" placeholder="Seu país">
+        </div>
+
+        <button type="submit" class="btn btn-outline-primary">Cadastrar</button>
+      </form>
+    </section>
+  </body>
+</html>
